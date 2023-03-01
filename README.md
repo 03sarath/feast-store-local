@@ -16,6 +16,8 @@ Now
 
 `cd my_project/feature_repo`
 
+### Move `inspect_data.py` , `get_data_inference.py` & `gen_train_data.py` inside `my_project/feature_repo`
+
 ### Run python script `inspect.py` to inspect your data
 
 ![spaces_bfkpmICjbK4wjNolbKV2_uploads_git-blob-b2961c773e43f78f59e993ebde00b25a3ff7aca7_screen-shot-2021-08-23-at-2 35 18-pm](https://user-images.githubusercontent.com/22353843/222173075-3932fb8d-1b7c-40cc-9c0c-561ac7d4a752.png)
