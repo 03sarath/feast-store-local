@@ -3,7 +3,7 @@
 ## Let's get started with deploying a local feature store with a `Parquet file offline store` and `Sqlite online store`.
 
 ### Install Feast
-`pip install feast==0.31.1`
+`pip install feast`
 
 ###  Create a feature repository
 `feast init my_project`
