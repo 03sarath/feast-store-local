@@ -1,9 +1,37 @@
 # feast-store-local
 
+## Getting started with Ubuntu Environment on Docker
+
+### Pull the Ubuntu Image
+```
+docker pull ubuntu:latest
+```
+### Run Ubuntu Image
+```
+docker run -it -p 8888:8888 ubuntu:latest
+
+apt-get update
+apt-get upgrade
+```
+
+### Install Python & Python Env
+```
+apt-get install python3
+apt-get install python3-pip
+python3 --version
+pip3 --version
+
+
+pip3 install virtualenv
+virtualenv myenv
+source myenv/bin/activate
+
+```
+
 ## Let's get started with deploying a local feature store with a `Parquet file offline store` and `Sqlite online store`.
 
 ### Install Feast
-`pip install feast==0.31.1`
+`pip install feast`
 
 ###  Create a feature repository
 `feast init my_project`
@@ -116,3 +144,8 @@ INFO:     Uvicorn running on http://0.0.0.0:8888 (Press CTRL+C to quit)
 ```
 ![feast-ui](https://user-images.githubusercontent.com/22353843/222175774-02150d8e-16f4-42a1-98a1-50238798a416.jpg)
 
+### Deactivate python env
+```
+deactivate
+
+```
