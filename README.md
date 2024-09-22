@@ -14,16 +14,24 @@ apt-get update
 apt-get upgrade
 ```
 
+### Install Git
+```
+apt install git
+git --version
+
+```
+
 ### Install Python & Python Env
 ```
 apt-get install python3
 apt-get install python3-pip
+apt install python3-venv
+
 python3 --version
 pip3 --version
 
 
-pip3 install virtualenv
-virtualenv myenv
+python3 -m venv myenv
 source myenv/bin/activate
 
 ```
