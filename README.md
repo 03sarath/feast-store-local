@@ -2,55 +2,29 @@
 
 ## Getting started with Ubuntu Environment on Docker
 
-### Pull the Ubuntu Image
-```
-docker pull ubuntu:latest
-```
-### Run Ubuntu Image
-```
-docker run -it -p 8888:8888 ubuntu:latest
+docker pull ubuntu:24.04
+
+docker run -it -p 8888:8888 ubuntu:24.04
 
 apt-get update
-apt-get upgrade
-```
-
-### Install Git
-```
-apt install git
-git --version
-
-```
-
-### Install Python & Python Env
-```
-apt-get install python3
-apt-get install python3-pip
-apt install python3-venv
+apt-get install -y \
+    git \
+    python3 \
+    python3-pip \
+    python3-venv
 
 python3 --version
 pip3 --version
 
-
 python3 -m venv myenv
 source myenv/bin/activate
 
-```
+pip install --upgrade pip
+pip install feast
 
-## Let's get started with deploying a local feature store with a `Parquet file offline store` and `Sqlite online store`.
+feast init my_project
 
-### Install Feast
-`pip install feast`
-
-###  Create a feature repository
-`feast init my_project`
-
-Output
-
-`Creating a new Feast repository in /home/Jovyan/my_project.`
-
-Now
-
-`cd my_project/feature_repo`
+cd my_project/feature_repo
 
 ### Move `inspect_data.py` , `get_data_inference.py` & `gen_train_data.py` inside `my_project/feature_repo`
 
