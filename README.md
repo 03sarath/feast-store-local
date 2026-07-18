@@ -1,7 +1,7 @@
 # feast-store-local
 
 ## Getting started with Ubuntu Environment on Docker
-
+```
 docker pull ubuntu:24.04
 
 docker run -it -p 8888:8888 ubuntu:24.04
@@ -25,7 +25,7 @@ pip install feast
 feast init my_project
 
 cd my_project/feature_repo
-
+```
 ### Move `inspect_data.py` , `get_data_inference.py` & `gen_train_data.py` inside `my_project/feature_repo`
 
 ### Run python script `inspect.py` to inspect your data
